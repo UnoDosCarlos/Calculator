@@ -6,6 +6,8 @@ body {
     background-color: aqua;
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -15,15 +17,6 @@ h1 {
         font-size: 45px;
 }
 
-.container {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-
-
-}
-
 
 
 .calculator {
@@ -31,13 +24,14 @@ h1 {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    background-color: lightgray;
+    background-color: rgb(85, 85, 85);
     border: 2px solid black;
     border-radius: 10%;
     width: 230px;
     height:400px;
     padding: 10px;
     box-shadow: 3px 3px;
+    overflow: hidden;
 
 
 
@@ -45,12 +39,14 @@ h1 {
 
 
 #screen {
-    background-color: grey;
+    background-color: rgb(190, 190, 190);
     border: 1px solid black;
     height: 70px;
     width: 225px;
     margin: auto;
     border-radius: 15%;
+    font-size:45px;
+    text-align: left;
 
 
 }
@@ -62,7 +58,6 @@ h1 {
     gap:10px;
 
 
-
 }
 
 
@@ -72,7 +67,36 @@ height: 50px;
 width: 50px;
 border-radius: 50%;
 font-size: 20px;
+background-color: rgb(175, 175, 175);
+border:none;
 
 
+
+}
+
+button:hover {
+
+background-color: rgb(211, 211, 211);
+
+}
+
+button:active {
+background-color: rgb(255, 255, 255);
+
+}
+
+.special-button {
+
+background-color: rgb(255, 181, 84);
+
+}
+.special-button:hover {
+
+background-color: rgb(255, 202, 133);
+
+}
+.special-button:active {
+
+background-color: rgb(255, 218, 169)
 
 }
