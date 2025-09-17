@@ -1,5 +1,5 @@
 
-const screen = document.getElementById("#screen")
+const screen = document.getElementById("screen")
 const clear = document.querySelector('#clear');
 const backspace = document.querySelector('#backspace');
 const divide = document.querySelector('#divide');
@@ -10,11 +10,18 @@ const decimal = document.querySelector('#decimal');
 const allButtons = document.querySelectorAll('button');
 
 
-for(let btn of allButtons) {
-    btn.addEventListener('click',() => {
-        let currentValue = Number(btn.value);
-        console.log(currentValue);
-    })
+
+function showOnScreen(input) {
+screen.value += input;
 
 }
 
+function clearScreen() {
+screen.value = '';
+
+}
+
+function removeNumber() {
+screen.value = screen.value.slice(0, -1);
+
+}
