@@ -15,29 +15,34 @@
     <h1>Calculator</h1>
 
     <div class="calculator">
-            <input id="screen" readonly>
+            <div class="screen">
+                <div class="previous-number"></div>
+                <div class="current-number"></div>
+
+
+            </div>
 
             <div id="grid">
-                <button onclick="clearScreen()" class="special-button" id="clear">C</button>
-                <button onclick="removeNumber()" class="special-button" id="backspace">⌫</button>
-                <button onclick="showOnScreen('x²')" class="special-button" id>x²</button>
-                <button onclick="showOnScreen('/')" class="special-button" id="divide">/</button>
-                <button onclick="showOnScreen('1')" value="1">1</button>
-                <button onclick="showOnScreen('2')" value="2">2</button>
-                <button onclick="showOnScreen('3')" value="3">3</button>
-                <button onclick="showOnScreen('*')" class="special-button" id="multiply">*</button>
-                <button onclick="showOnScreen('4')" value="4">4</button>
-                <button onclick="showOnScreen('5')" value="5">5</button>
-                <button onclick="showOnScreen('6')" value="6">6</button>
-                <button onclick="showOnScreen('-')" class="special-button" id="subtract">-</button>
-                <button onclick="showOnScreen('7')" value="7">7</button>
-                <button onclick="showOnScreen('8')" value="8">8</button>
-                <button onclick="showOnScreen('9')" value="9">9</button>
-                <button onclick="showOnScreen('+')" class="special-button" id="add">+</button>
-                <button onclick="rickRoll()" class="special-button" id>RR</button>
-                <button onclick="showOnScreen('0')"  value="0">0</button>
-                <button onclick="showOnScreen('.')" class="special-button" id="decimal">.</button>
-                <button onclick="calculate()" class="special-button" id>=</button>
+                <button class="special-button" id="clear">C</button>
+                <button class="special-button" id="backspace">⌫</button>
+                <button class="operand-button" id="power">x²</button>
+                <button class="operand-button" id="divide">/</button>
+                <button class="number-button">1</button>
+                <button class="number-button">2</button>
+                <button class="number-button">3</button>
+                <button class="operand-button" id="multiply">*</button>
+                <button class="number-button">4</button>
+                <button class="number-button">5</button>
+                <button class="number-button">6</button>
+                <button class="operand-button" id="subtract">-</button>
+                <button class="number-button">7</button>
+                <button class="number-button">8</button>
+                <button class="number-button">9</button>
+                <button class="operand-button" id="add">+</button>
+                <button class="special-button" id>RR</button>
+                <button class="number-button">0</button>
+                <button class="number-button" id="decimal">.</button>
+                <button class="equals" id>=</button>
             </div>
     </div>
 </div>
