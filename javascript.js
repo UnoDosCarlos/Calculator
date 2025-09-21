@@ -25,9 +25,26 @@ numBtns.forEach(button => {
 
         showOnScreen(button.textContent)
         updateScreen();
+        console.log(prevNum);
     })
 
 })
+
+opBtns.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+    chooseOperator(button.textContent);
+    updateScreen();
+
+    
+    })
+
+
+})
+
+
+
 
 
 function showOnScreen(number) {
@@ -51,6 +68,16 @@ function removeNumber() {
 }
 
 function chooseOperator(operation) {
+if (this.currNum === '') {
+    return;
+}
+if(this.prevNum !== '') {
+
+    this.calculate();
+}
+this.operation = operation;
+this.prevNum = this.currNum;
+this.currNum = '';
 
 
 }
@@ -58,11 +85,15 @@ function chooseOperator(operation) {
 
 function calculate() {
 
+
+
+
 }
 
 function updateScreen() {
+
     currNum.textContent = this.currNum;
-
-
+    prevNum.textContent = this.prevNum;
+    
 
 }

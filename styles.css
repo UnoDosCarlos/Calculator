@@ -42,16 +42,29 @@ h1 {
     background-color: rgb(190, 190, 190);
     border: 1px solid black;
     display:flex;
+    flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70px;
     width: 225px;
     margin: auto;
     border-radius: 15%;
-    font-size:45px;
-    color:white;
     overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
 
+}
+
+.screen .previous-number {
+
+color:rgb(75, 75, 75);
+font-size: 20px;
+
+}
+
+.screen .current-number {
+color:white;
+font-size: 45px;
 
 }
 
