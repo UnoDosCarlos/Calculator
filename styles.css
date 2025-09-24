@@ -3,7 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: aqua;
+    background-color: rgb(238, 230, 207);
     display:flex;
     flex-direction: column;
     justify-content: center;

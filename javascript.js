@@ -166,5 +166,5 @@ function updateScreen() {
     } else {
         prevNum.textContent = '';
     }
-
+    console.log(currNum);
 }
